@@ -1,5 +1,5 @@
 # Makoto Tachibana Voice Synthesis — 橘真琴语音合成
-(by the way,you can copy the sound whoever you want)😊
+(by the way, you can copy the voice of whoever you want 😊)
 ## 算了我要用中文了，反正也不给外国人看
 ### 1.想要直接用我事先调好的模型，请移步
 https://github.com/wbbbbbby001/Makoto_TTS_by_GPT_SoVITS/blob/main/README_MAKOTO.md
