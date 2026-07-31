@@ -1,0 +1,50 @@
+vocals.wav_0000040640_0000210560.wav	o [ h a y o o h a r u ch a N g o m e N g o m e N ] h a r u ny u [ u g a k u ] sh i k i UNK o [ k u r e r u y o	None	おはよう春ちゃんごめんごめん春 入学式遅れるよ
+vocals.wav_0000441920_0000584320.wav	h a ] r u n o UNK k o [ t o ] n a r a UNK n a ] n i d e m o UNK w a [ k a ] r u y o	None	春のことなら何でもわかるよ
+vocals.wav_0000744960_0000872640.wav	h a [ r u ] n a n i k a UNK b u [ k a ts u UNK h a ] i r u UNK b o ] k u	None	春何か部活入る僕
+vocals.wav_0001163520_0001285120.wav	j i [ b u N n o UNK k o [ t o ] w a UNK o [ r e cl t e UNK i [ o o ] k a n a cl t e	None	自分のことは俺って言おうかなって
+vocals.wav_0001414720_0001545920.wav	h a ] r u UNK m i [ e ] n a i ? h a ] r u n o UNK k u ] r a s u w a n e	None	春見えない?春のクラスはね
+vocals.wav_0001681920_0001751680.wav	k u ] r o s u UNK w a [ k a r e ] ch a cl t a n e	None	クロス別れちゃったね
+vocals.wav_0001941120_0002010880.wav	a , m a ] t e y o UNK h a ] r u	None	あ、待てよ春
+vocals.wav_0002278720_0002430400.wav	r i [ i N UNK d o ] o UNK sh i [ t e ] r u k a n a n a [ g i s a UNK h a [ sh i ] cl t a r a UNK a [ b u n a i y o	None	リーンどうしてるかな 渚走ったら危ないよ
+vocals.wav_0002608320_0002722880.wav	s o [ o d a n e UNK u [ ch u u p u ] r a N UNK k o ] o	None	そうだね宇宙プランコー
+vocals.wav_0002872000_0002999040.wav	o [ h a y o o ] h a r u UNK o [ m o ] u	None	おはようハルおもう
+vocals.wav_0003191680_0003347520.wav	t a [ ch i ] b a n a UNK m a [ k o t o cl t e UNK i [ u UNK N ] d a UNK y o [ r o sh i k u n e UNK k a [ cl k o y o ] k a cl t a y o	None	立花誠って言うんだよろしくねかっこよかったよ
+vocals.wav_0003491520_0003609600.wav	h a [ r u n i ] N k i m o n o d a n e e i [ y a UNK i ] i y o	None	春人気者だねぇ いやいいよ
+vocals.wav_0003861440_0004004480.wav	s o [ o UNK i ] e b a UNK s u ] m i g a UNK b a [ s u k e ] b u n i UNK k a [ N y u u UNK sh i [ t e UNK k i ] t a k e d o UNK h a ] r u w a UNK b u [ k a ts u d o ] o s a	None	そういえば住みがバスケ部に勧誘してきたけど春は部活動作
+vocals.wav_0004128000_0004190080.wav	i [ k e n a i y o	None	いけないよ
+vocals.wav_0004395840_0004518720.wav	h a ] r u w a UNK o [ r e g a UNK b a [ s u k e ] b u n i UNK h a ] i r u UNK n o [ o UNK s a [ N s e e ?	None	春は俺がバスケ部に入るのを賛成?
+vocals.wav_0004713600_0004857600.wav	s o [ r e m o UNK i ] i k a m o n e UNK a [ n o n e , k o [ n o UNK s e [ N p a i g a	None	それもいいかもねあのね、この先輩が
+vocals.wav_0005018240_0005145920.wav	h a ] r u , d o ] o UNK s u [ r u ? h a ] r u , m a [ t a d e s u	None	ハル、どうする?ハル、またです
+vocals.wav_0005344640_0005459200.wav	sh i [ N ny u u b u ] i N UNK s u [ k u n a ] i cl t e UNK h a ] r u UNK d o ] o UNK sh i [ y o o	None	新入部員少ないって春どうしよう
+vocals.wav_0005645440_0005807680.wav	m a ] d a UNK k i [ m a cl t e n a i UNK N ] d a y o n e UNK s o [ r e d a t o UNK o [ y o g e ] r u UNK h i [ t o UNK z e [ N i N UNK s u [ i e e ] b u n i UNK n a [ cl ch a u ] y o	None	まだ決まってないんだよねそれだと泳げる人全員水泳部になっちゃうよ
+vocals.wav_0005959040_0006176640.wav	h a ] r u m o UNK n a ] n i k a UNK i [ cl t e y o UNK s o [ N n a UNK t e [ k i t o o n a UNK n a ] N d a k a UNK y o ] k u UNK w a [ k a r a ] n a i UNK a [ i d a n i UNK h a ] i r u UNK k o [ t o ] n i UNK n a ] cl ch a cl t a	None	春も何か言ってよそんな適当ななんだかよくわからない間に入ることになっちゃった
+vocals.wav_0006345280_0006425280.wav	y o [ r o sh i k u o n e g a i sh i m a s u k e ] e k o k u ?	None	よろしくお願いします警告?
+vocals.wav_0006655360_0006772480.wav	a [ r a ] h a i	None	あらはい
+vocals.wav_0006916800_0007040000.wav	a ] s a h i UNK d a [ i j o ] o b u k a n a UNK n a [ ts u ] y a UNK s e [ N p a i t o UNK i [ k u y a k u ] N	None	朝日大丈夫かな夏や先輩といくやくん
+vocals.wav_0007174720_0007322560.wav	a [ a ] o r e t o UNK h a [ r u s u i e e ] b u n i UNK h a ] i cl t a UNK N ] d a u [ ch i n o UNK g a [ cl k o o ] b u UNK k a [ ts u d o o g a	None	ああ俺と春水泳部に入ったんだ うちの学校部活動が
+vocals.wav_0007459840_0007645440.wav	y o ] k a cl t a n a UNK n a [ g i s a b u ] k a ts u n o UNK h o ] o d e UNK k i [ r o k u ] k a i g a UNK a ] r u cl t e UNK i [ cl t e t a ] k a r a	None	よかったな渚部活の方で記録会があるって言ってたから
+vocals.wav_0000272320_0000409280.wav	h a ] r u UNK d a [ m e ] d a y o UNK e [ r i UNK sh i [ m e ] n a i t o UNK s u ] g u UNK n a [ r e ] r u y o	None	春ダメだよ襟締めないとすぐ慣れるよ
+vocals.wav_0000624000_0000735040.wav	t o UNK i [ i t a ] i UNK t o [ k o r o d a ] k e d o UNK o [ b a s a N n i UNK k i [ i t a UNK N ] d a	None	と言いたいところだけどおばさんに聞いたんだ
+vocals.wav_0000958400_0001145600.wav	m o ] o , o [ r e w a UNK m a ] d a UNK m a [ y o ] cl t e t e , ky o ] o k a r a UNK ch u [ u g a ] k u s e e d a sh i	None	もう、俺はまだ迷ってて、今日から中学生だし
+vocals.wav_0001285440_0001382720.wav	a ] cl t a UNK o [ r e UNK n i [ k u m i d a	None	あった俺2組だ
+vocals.wav_0001566080_0001611840.wav	o [ i ch i k u m i d a ] w a	None	おいちくみだわ
+vocals.wav_0001809280_0001935040.wav	a ] a m o [ ch i ts u k i k u N ] s o o n a n o	None	ああ 餅月くんそうなの
+vocals.wav_0002079680_0002175360.wav	a [ n o UNK t o [ k i ] n o UNK sh a [ sh i N UNK k a [ z a r a r e t a UNK N ] d a n e	None	あの時の写真飾られたんだね
+vocals.wav_0002430400_0002608320.wav	i [ ch i n i ch i ] j a UNK w a [ k a N ] n a i y o UNK n a [ g i s a m o UNK r a [ i n e N n i UNK n a ] r e b a UNK ch u [ u g a ] k u s e e n i UNK n a [ r e ] r u y o	None	一日じゃわかんないよ渚も来年になれば中学生になれるよ
+vocals.wav_0002724480_0002870080.wav	i [ cl t e UNK k i [ m a a ] s u ! o [ b a s a N , o [ h a y o o g o z a i m a ] s u	None	行ってきまーす!おばさん、おはようございます
+vocals.wav_0003011520_0003122880.wav	h a ] r u , s a ] i g o n o UNK sh u ] u t o UNK s u [ g o ] k a cl t a n e .	None	春、最後のシュートすごかったね。
+vocals.wav_0003347520_0003491520.wav	a , s u [ i e e ] b u n i UNK h a ] i r u n o ? a , u ] N UNK n a ] N d e ?	None	あ、水泳部に入るの?あ、うんなんで?
+vocals.wav_0003637440_0003845120.wav	a [ t a r a sh i ] i UNK s e [ e k a ts u d e UNK s u [ k o ] sh i UNK ts u [ k a r e t e ] r u t a ] sh i k a n i UNK h a ] r u n o UNK k u ] r a s u cl t e UNK g e ] N k i n a UNK k o [ g a UNK o ] o i UNK m o ] N n e	None	新しい生活で少し疲れてる 確かに春のクラスって元気な子が多いもんね
+vocals.wav_0004004480_0004128000.wav	d a ] n a d e ] m o UNK u [ ch i n o UNK g a [ cl k o o ] d o k o k a n i w a UNK ny u [ u b u UNK sh i [ n a i t o UNK i [ k e	None	だな でもうちの学校どこかには入部しないといけ
+vocals.wav_0004267520_0004395840.wav	m a ] d a UNK k i [ m e t e n a i i [ r o N n a UNK b u ] g a UNK a ] cl t e UNK m a [ y o cl ch a u ] y o n e	None	まだ決めてない いろんな部があって迷っちゃうよね
+vocals.wav_0004532480_0004708160.wav	s o [ o d a y o n e UNK u [ N b a ] s u k e k a t a ] i i k u d e sh i k a UNK sh i [ t a UNK k o [ t o UNK n a ] i k e d o	None	そうだよねうんバスケか 体育でしかしたことないけど
+vocals.wav_0004879680_0005018240.wav	s a ] cl k i k a r a UNK k o [ N n a UNK k a [ N j i d e UNK k e [ e g o k e ] e g o	None	さっきからこんな感じで敬語敬語
+vocals.wav_0005163840_0005299200.wav	d o ] o UNK sh i [ y o o UNK ky o ] o d a i n a UNK N ] d e s u k a	None	どうしよう兄弟なんですか
+vocals.wav_0005471360_0005634240.wav	s o [ o k a n a a UNK k i [ r i sh i m a k u N d a cl ] k e n a ] N d e UNK s o [ o UNK o [ m o ] u n o	None	そうかなぁ霧島君だっけ なんでそう思うの
+vocals.wav_0005828480_0005959040.wav	k i [ r i sh i m a UNK s e [ N p a i o r e ] t a ch i m o UNK ch o ] cl t o UNK k a [ cl t e n i	None	霧島先輩俺たちもちょっと勝手に
+vocals.wav_0006176960_0006345280.wav	t a [ ch i ] b a n a UNK m a [ k o t o d e ] s u . i [ w a t o b i i e s u sh i i d e w a UNK b a ] cl k u g a UNK s e [ N m o N d e sh i t a .	None	橘誠です。岩戸BSCではバックが専門でした。
+vocals.wav_0006466880_0006655360.wav	a [ n o UNK ch o ] cl t o UNK s o [ r e d o k o r o j a n a i cl t e b a UNK h a ] r u	None	あのちょっとそれどころじゃないってば春
+vocals.wav_0006788160_0006916800.wav	o [ y a s u m i n a s a i	None	おやすみなさい
+vocals.wav_0007055040_0007164800.wav	n a ] N k a w a r u i UNK n o [ k a n a h a ] r u UNK t e [ k i t o o s u g i d a y o	None	なんか悪いのかな 春適当すぎだよ
+vocals.wav_0007322560_0007459840.wav	h i [ cl s u d a ] k a r a s a UNK n a [ r u b e k u UNK k o [ k o n i m o UNK k a [ o UNK d a ] s u k a r a s a	None	必須だからさなるべくここにも顔出すからさ
+vocals.wav_0007645440_0007728960.wav	s o [ cl ch i y u ] u s e N n i UNK n a ] cl ch a u k a n a	None	そっち優先になっちゃうかな

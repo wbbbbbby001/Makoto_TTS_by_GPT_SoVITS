@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# GPT-SoVITS framework (users clone from official repo)
+GPT_SoVITS/
+
+# Python runtime (users install via requirements.txt)
+runtime/
+
+# Pretrained models (users download separately)
+pretrained_models/
+
+# Large training checkpoints (not needed for inference)
+logs/*/logs_s1*/
+logs/*/logs_s2*/
+logs/*/logs_s1_v2/
+logs/*/logs_s2_v2/
+logs/*/logs_s2_v3_lora_*/
+
+# Tools (users install separately)
+tools/
+models/
+
+# System binaries
+ffmpeg.exe
+ffprobe.exe
+
+# Temp files
+TEMP/*.wav
+TEMP/_test_*.py
+TEMP/_full_*.py
+TEMP/_v3_*.py
+TEMP/_final_*.py
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Backup files
+*.bak
