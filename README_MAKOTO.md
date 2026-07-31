@@ -13,6 +13,7 @@
 
 ## 📖 目录
 
+- [🚀 快速开始（GitHub 下载与使用）](#-快速开始github-下载与使用)
 - [项目概述](#项目概述)
 - [模型架构](#模型架构)
 - [环境准备](#环境准备)
@@ -53,6 +54,215 @@
 | **推理速度** | GPU 实时（RTF 0.27x ~ 0.63x）/ CPU 可接受延迟 |
 | **已验证** | 2026-07-31 GPT+SoVITS v2 端到端测试：5/5 通过，详见 [验证报告](./VERIFICATION_REPORT.md) |
 | **LoRA 状态** | ✅ 训练完成（258 键, rank=32），使用自定义 `b'03'` 文件头格式 |
+
+---
+
+## 🚀 快速开始（GitHub 下载与使用）
+
+本仓库包含橘真琴语音克隆的**全部训练成果**（微调权重 + 训练数据 + 配置 + Demo 音频），你只需搭配 GPT-SoVITS 框架即可直接推理。**不需要重新训练。**
+
+### 前置要求
+
+| 组件 | 最低要求 | 推荐 |
+|------|---------|------|
+| GPU | NVIDIA GPU 6 GB+ 显存 | RTX 3060+ |
+| 内存 | 16 GB | 32 GB |
+| 磁盘 | 5 GB（项目 + 预训练模型） | 10 GB |
+| Python | 3.9 - 3.11 | 3.9 |
+| PyTorch | 2.0+ (CUDA) | 2.8+ |
+| Git & Git LFS | ✅ 必需 | 最新版 |
+
+### 步骤 1：克隆本仓库（含权重）
+
+```bash
+# 安装 Git LFS（如未安装）
+# Windows: 下载 https://git-lfs.com/
+# Mac: brew install git-lfs
+# Linux: sudo apt install git-lfs
+
+git lfs install
+
+# 克隆本仓库（权重通过 Git LFS 下载）
+git clone https://github.com/wbbbbbby001/Makoto_TTS_by_GPT_SoVITS.git
+cd Makoto_TTS_by_GPT_SoVITS
+```
+
+> 📌 **注意**：必须安装 Git LFS！权重文件（`.ckpt` / `.pth`）超过 GitHub 的 100 MB 限制，通过 Git LFS 托管。如果直接 `git clone` 不加 `git lfs install`，下载的权重文件将是指针而非实际数据（只有几百字节），推理时会报错。
+
+### 步骤 2：克隆 GPT-SoVITS 框架
+
+在本仓库**同级目录**克隆官方 GPT-SoVITS：
+
+```bash
+# 回到上级目录
+cd ..
+
+# 克隆 GPT-SoVITS（v3lora 版本）
+git clone https://github.com/RVC-Boss/GPT-SoVITS.git
+cd GPT-SoVITS
+```
+
+> 本方案基于 **GPT-SoVITS-v3lora-20250228** 版本。如遇到兼容性问题，可将官方仓库 checkout 到对应日期：
+> ```bash
+> git checkout $(git rev-list -n 1 --before="2025-03-01" main)
+> ```
+
+### 步骤 3：安装 Python 依赖
+
+```bash
+# 在 GPT-SoVITS 目录下
+pip install -r requirements.txt
+
+# 关键依赖版本（本方案验证过的版本）
+# torch>=2.0 (CUDA), gradio, transformers, pytorch_lightning, peft, soundfile, pyyaml
+```
+
+### 步骤 4：下载预训练基座模型
+
+GPT-SoVITS 需要以下预训练模型作为基座。下载后放入 `GPT_SoVITS/pretrained_models/` 目录：
+
+```bash
+# 进入 GPT-SoVITS 框架目录
+cd GPT-SoVITS
+
+# 方式一：使用框架自带的下载脚本
+python download.py
+
+# 方式二：手动下载以下模型放到 GPT_SoVITS/pretrained_models/
+```
+
+**必需的预训练模型清单**：
+
+```
+GPT_SoVITS/pretrained_models/
+├── chinese-hubert-base/              # HuBERT 音频特征提取 (~400 MB)
+│   └── pytorch_model.bin
+├── chinese-roberta-wwm-ext-large/    # BERT 文本语义编码 (~1.3 GB)
+│   └── pytorch_model.bin
+└── gsv-v2final-pretrained/
+    ├── s1bert25hz-5kh-longer-epoch=12-step=369668.ckpt  # GPT v2 基座 (~310 MB)
+    ├── s2G2333k.pth                   # SoVITS v2 Generator (~170 MB)
+    └── s2D2333k.pth                   # SoVITS v2 Discriminator (~170 MB)
+```
+
+这些模型可从 [GPT-SoVITS 官方](https://github.com/RVC-Boss/GPT-SoVITS) 的下载链接或 ModelScope / HuggingFace 获取。
+
+### 步骤 5：将本仓库的权重链接/拷贝到框架中
+
+有两种方式让 GPT-SoVITS 框架找到本仓库的权重：
+
+**方式 A（推荐）：软链接**——不占用额外磁盘空间
+
+```bash
+# Windows (PowerShell, 管理员权限)
+cd GPT-SoVITS
+New-Item -ItemType Junction -Path "GPT_weights_v2" -Target "..\Makoto_TTS_by_GPT_SoVITS\GPT_weights_v2"
+New-Item -ItemType Junction -Path "SoVITS_weights_v2" -Target "..\Makoto_TTS_by_GPT_SoVITS\SoVITS_weights_v2"
+New-Item -ItemType Junction -Path "SoVITS_weights_v3" -Target "..\Makoto_TTS_by_GPT_SoVITS\SoVITS_weights_v3"
+```
+
+**方式 B：直接拷贝**
+
+```bash
+cp -r ../Makoto_TTS_by_GPT_SoVITS/GPT_weights_v2 .
+cp -r ../Makoto_TTS_by_GPT_SoVITS/SoVITS_weights_v2 .
+cp -r ../Makoto_TTS_by_GPT_SoVITS/SoVITS_weights_v3 .
+```
+
+### 步骤 6：推理！
+
+现在可以启动推理了。以下是最简单的 Python API 方式（无需 WebUI）：
+
+```python
+import sys, os, yaml, time, glob, soundfile as sf
+
+# 设置路径
+os.chdir("GPT-SoVITS")  # GPT-SoVITS 框架目录
+sys.path.insert(0, ".")
+sys.path.insert(0, "GPT_SoVITS")
+
+from GPT_SoVITS.TTS_infer_pack.TTS import TTS, TTS_Config
+
+# 配置推理
+with open("GPT_SoVITS/configs/tts_infer.yaml", "r", encoding="utf-8") as f:
+    config = yaml.safe_load(f)
+
+config["custom"]["t2s_weights_path"] = "GPT_weights_v2/makoto-e15.ckpt"
+config["custom"]["vits_weights_path"] = "SoVITS_weights_v2/makoto_e8_s200.pth"
+config["custom"]["version"] = "v2"
+config["custom"]["device"] = "cuda"  # 或 "cpu"
+config["custom"]["is_half"] = True   # GPU 用 FP16 加速
+
+# 初始化 TTS
+tts = TTS(TTS_Config(config))
+
+# 准备参考音频和标注（用本仓库提供的训练数据）
+ref_audio = "../Makoto_TTS_by_GPT_SoVITS/output/denoise_opt/vocals.wav_0000040640_0000210560.wav"
+prompt_text = ""  # 从本仓库 logs/makoto/2-name2text.txt 中获取对应标注
+with open("../Makoto_TTS_by_GPT_SoVITS/logs/makoto/2-name2text.txt", "r") as f:
+    ref_name = os.path.basename(ref_audio)
+    for line in f:
+        parts = line.strip().split("\t")
+        if len(parts) >= 2 and parts[0] == ref_name:
+            prompt_text = parts[1]
+            break
+
+# 推理（run() 返回生成器，遍历到最后一个 yield 即为最终音频）
+inputs = {
+    "text": "おはよう、春ちゃん。今日もいい天気だね。",
+    "text_lang": "ja",
+    "ref_audio_path": ref_audio,
+    "prompt_text": prompt_text,
+    "prompt_lang": "ja",
+    "top_k": 15,
+    "temperature": 1.0,
+    "seed": 42,
+}
+
+gen = tts.run(inputs)
+sr, audio = None, None
+for chunk in gen:
+    if isinstance(chunk, tuple) and len(chunk) == 2:
+        sr, audio = chunk
+
+# 保存
+sf.write("makoto_output.wav", audio, sr)
+print(f"✅ 生成完毕: {len(audio)/sr:.1f} 秒 @ {sr} Hz")
+```
+
+### 步骤 7（可选）：启动 WebUI
+
+```bash
+cd GPT-SoVITS
+python webui.py
+```
+
+在 WebUI 中：
+1. 选择 GPT 权重：`GPT_weights_v2/makoto-e15.ckpt`
+2. 选择 SoVITS 权重：`SoVITS_weights_v2/makoto_e8_s200.pth`
+3. 上传参考音频（或使用 `output/denoise_opt/` 中的文件）
+4. 输入日语文本 → 生成
+
+### 🎵 试听 Demo
+
+可直接播放本仓库 `demo/` 目录下的 5 句推理样本：
+
+| 文件 | 文本 | 场景 | 时长 |
+|------|------|------|------|
+| `demo/final_1.wav` | おはよう、春ちゃん。今日もいい天気だね。 | 日常问候 | 9.8s |
+| `demo/final_2.wav` | 僕は橘真琴。水泳部の部長をやってるんだ。 | 角色介绍 | 9.5s |
+| `demo/final_3.wav` | 一緒に泳ごう！水の中は気持ちいいよ。 | 邀请游泳 | 6.3s |
+| `demo/final_4.wav` | 大丈夫？無理しないで、ゆっくり休もう。 | 关心他人 | 10.7s |
+| `demo/final_5.wav` | ありがとう、みんな。最高の夏だったね。 | 感谢告别 | 8.9s |
+
+| 推理配置 | 值 |
+|---------|-----|
+| GPT 权重 | `GPT_weights_v2/makoto-e15.ckpt` |
+| SoVITS 权重 | `SoVITS_weights_v2/makoto_e8_s200.pth` |
+| 推理设备 | NVIDIA RTX 5060 Laptop GPU, FP16 |
+| 平均 RTF | 0.24x（推理速度约为实时的 4 倍） |
+
+> 💡 **想自己训练？** 参考下方[训练流程](#训练流程)章节，了解如何用自己的音频数据微调 GPT-SoVITS。
 
 ---
 
