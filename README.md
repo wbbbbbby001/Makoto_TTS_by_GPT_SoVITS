@@ -11,3 +11,4 @@ https://github.com/wbbbbbby001/Makoto_TTS_by_GPT_SoVITS/tree/main/training_from_
 - 另外，这里有个最终杀招，你实在是不想自己折腾了，移步隔壁Claude code，把我的仓库链接https://github.com/wbbbbbby001/Makoto_TTS_by_GPT_SoVITS 给他，让他给你全链路安装验证
 - 什么？你说你没有Claude code？那trae大人也能做到呢😉
 - What the hell？你就是想用Claude code？那去请教trae大人，让他教你下载并跳过anthropic该死的登陆验证，并且接入我们权威的deepseek-v4-pro的API，他会告诉你怎么改配置文件的。我不想写了我要去吃饭···😋
+- 狗trae万恶的资本家，以前全给免费次数，前两天每天发放几十次免费任务次数，现在改成用点数？？！一个月500点，任务复杂的话一两个任务就全用完了，充钱也是点数少得可怜，不经用了，狗资本···梁圣加油！😭
